@@ -3,26 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fitness_center</title>
+    <title>Lenyx Gym</title>
 </head>
 <body>
-    <header>
-        <Nav>
 
-            <h1>Lenyx Gym</h1>
+    <!-- Header -->
+    <header>
+        <nav>
+            <h1>LENYX GYM</h1>
+
             <ul>
-                <li><a href="index.html"></a></li>
-                <li><a href="services.html"></a></li>
-                <li><a href="about.html"></a></li>
-                <li><a href="contact.html"></a></li>
-                <li><a href="footer.html"></a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-        </Nav>
+        </nav>
     </header>
 
-    
+    <main>
 
-    
-     
+        <!-- Hero Section -->
+        <section id="home">
+            <img src="images/hero.jpg" alt="Hero Image of Lenyx Gym">
+
+            <h2>Build Your Strongest Self</h2>
+            <p>
+                Lenyx Gym helps you build strength, improve your fitness,
+                and achieve a healthier lifestyle.
+            </p>
+            <a href="#contact">Join Lenyx Gym</a>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <h2>Our Services</h2>
+
+            <article>
+                <h3>Strength Training</h3>
+                <p>Build muscle and increase your overall strength with our equipment and training programs.</p>
+            </article>
+
+            <article>
+                <h3>Cardio Training</h3>
+                <p>Improve your endurance and cardiovascular fitness with effective cardio workouts.</p>
+            </article>
+
+            <article>
+                <h3>Personal Training</h3>
+                <p>Get personalized guidance from our trainers to help you reach your fitness goals.</p>
+            </article>
+        </section>
+
+        <!-- About / Team Section -->
+        <section id="about">
+            <h2>About Lenyx Gym</h2>
+
+            <p>
+                Lenyx Gym is a fitness center focused on helping people become
+                stronger, healthier, and more confident.
+            </p>
+
+            <h3>Our Team</h3>
+
+            <p><strong>John Doe</strong> - Head Trainer</p>
+            <p><strong>Jane Doe</strong> - Fitness Coach</p>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <br><br>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <br><br>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>Follow us:</p>
+
+        <a href="#">Facebook</a>
+        <a href="#">Instagram</a>
+        <a href="#">TikTok</a>
+
+        <p>&copy; 2026 Lenyx Gym. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>

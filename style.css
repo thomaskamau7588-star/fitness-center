@@ -1,8 +1,270 @@
-*{
-    margin:0;
-    padding:0;
+/* BASIC RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
-    background-color: burlywood;
-    
+
+
+/* BODY */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+
+/* HEADER */
+
+header {
+    background-color: #111;
+    padding: 20px;
+}
+
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    color: orange;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(255, 183, 2);
+}
+
+
+/* MAIN CONTENT*/
+
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+/* SECTIONS */
+
+section {
+    background-color: white;
+    padding: 40px;
+    margin-bottom: 20px;
+}
+
+section h1 {
+    color: orange;
+    margin-bottom: 20px;
+}
+
+section h2 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+section h3 {
+    color: orange;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+section p {
+    margin-bottom: 15px;
+}
+
+
+/* HOME PAGE*/
+
+#home {
+    background-color: #222;
+    color: white;
+    text-align: center;
+}
+
+#home h2 {
+    color: orange;
+    font-size: 35px;
+    margin-bottom: 15px;
+}
+
+#home p {
+    margin-bottom: 20px;
+}
+
+#home img {
+    width: 45%;
+    height: 300px;
+    object-fit: cover;
+    margin: 10px;
+}
+
+
+/* SERVICES*/
+
+#services {
+    background-color: #f8f8f8;
+}
+
+#services ul {
+    padding-left: 30px;
+    margin: 20px 0;
+}
+
+#services li {
+    margin-bottom: 10px;
+}
+
+
+/* ABOUT */
+
+#about {
+    background-color: white;
+}
+
+#about-us {
+    min-height: 500px;
+}
+
+#about-us ul {
+    padding-left: 30px;
+    margin-top: 20px;
+}
+
+#about-us li {
+    margin-bottom: 10px;
+}
+
+
+/* SERVICES PAGE */
+
+#services-page h2 {
+    border-bottom: 2px solid orange;
+    padding-bottom: 5px;
+}
+
+
+/* LINKS / BUTTONS */
+
+section a {
+    display: inline-block;
+    background-color: orange;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section a:hover {
+    background-color: rgb(146, 117, 81);
+}
+
+
+/* CONTACT FORM*/
+
+form {
+    max-width: 600px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+}
+
+textarea {
+    height: 150px;
+}
+
+button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(150, 122, 87);
+}
+
+/* FOOTER */
+
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: orange;
+    text-decoration: none;
+    margin: 10px;
+}
+
+footer a:hover {
+    color: white;
+}
+
+
+/*  MOBILE DESIGN */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 15px;
+    }
+
+    nav li {
+        margin: 5px;
+    }
+
+    section {
+        padding: 25px;
+    }
+
+    #home img {
+        width: 100%;
+        height: auto;
+        margin: 10px 0;
+    }
+
+    #home h2 {
+        font-size: 28px;
+    }
 }
